@@ -1,0 +1,55 @@
+.column {
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+    margin-bottom: 30px;
+  }
+  .card{
+    --bs-card-border-radius: 10px;
+    background-color: #262626;
+    color: #ffffff;
+    padding: 10px;
+    min-height: 150px;
+    width: 150px;
+  }
+  .card .tag-outline{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 24px;
+    font-weight: 700;
+    border: 4px solid #fff;
+    border-radius: 8px;
+    padding: 8px 10px;
+    line-height: 24px;
+    position: relative;
+    top: 75px;
+  }
+  .tag-name{
+    color: #fff;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+  }
+  .tag-count{
+    color: #B2B2B2;
+    font-size: 12px;
+    
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 576px) {
+
+  .column{
+    width: 50%;
+    padding-left: 10px !important;
+    padding-right: 5px !important;
+    float: none;
+    margin-bottom: 20px;
+  }
+  .tags-mobile{
+    padding: 0 5px;
+  }
+}

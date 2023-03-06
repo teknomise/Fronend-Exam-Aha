@@ -1,0 +1,310 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #181818;
+}
+
+.main {
+  background-color: #181818;
+}
+
+.scrollable-y {
+  height: 800px;
+  overflow-y: auto;
+}
+
+.sidebar {
+  background-color: #181818;
+  border-right: 1px solid rgb(0 0 0 / 20%);
+  width: 80px
+}
+
+.logo-wrapper {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.logo {
+  width: 100%;
+}
+
+.img-responsive {
+  width: 100%
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: transparent;
+}
+
+.nav-link span {
+  display: block;
+}
+
+.content-wrapper {
+  padding: 4em 1.8em 2em 6.2em
+}
+
+.content-wrapper-2 {
+  padding: 5em 14em;
+}
+
+.content-wrapper-2 h1 {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.content-wrapper h2 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.pos-bottom-3 {
+  position: relative;
+  bottom: 4px;
+}
+
+.separation {
+  margin: 1.4em 0;
+  border-color: #fff;
+  opacity: 0.1;
+}
+
+.form-control {
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+  height: 60px;
+  box-shadow: none !important;
+}
+
+.form-control:focus {
+  border: 3px solid;
+  border-radius: 6px;
+  border-color: #ff9b33 !important;
+}
+
+
+.form-control::placeholder {
+  color: #5D5D5D;
+  font-size: 14px;
+}
+
+.form-control::-webkit-input-placeholder {
+  /* Edge */
+  color: #5D5D5D;
+  font-size: 14px;
+}
+
+.form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #5D5D5D;
+  font-size: 14px;
+}
+
+input[type="text"]:focus {
+  border-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(244, 244, 244, 0.6);
+  outline: 0 none;
+  color: #ffffff;
+}
+
+.follows {
+  padding: 1.2em 0 1em 4.2em
+}
+
+.pr-0 {
+  padding-right: 0;
+}
+
+.button-bottom {
+  position: absolute;
+  margin-top: 310px
+}
+
+.btn-light {
+  width: 343px;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  --bs-btn-bg: #ffffff;
+}
+
+.btn-light:hover{
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  --bs-btn-hover-bg: transparent;
+}
+
+.back-tab {
+  width: 145px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  left: -40px;
+  margin-top: 25px
+}
+
+.back-tab span {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.content-result {
+  padding-right: 0
+}
+
+.results {
+  width: 100%;
+  height: 800px;
+  overflow-y: auto;
+}
+
+.results .result-component {
+  display: block;
+  margin-top: 30px;
+}
+
+.results .result-component h3 {
+  font-size: 15px;
+  color: #ffffff;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.results .result-component small {
+  font-size: 12px;
+  color: #B2B2B2;
+}
+
+.results .result-component .img-result {
+  width: 210px;
+  height: 140px;
+}
+
+.loader-position{
+  margin: auto;
+  position: relative;
+  top: 3em;
+}
+.loader {
+  border: 8px solid #3d3d3d;
+  border-top: 8px solid #ff9b33;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .d-lg-block {
+    display: block !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .d-md-block {
+    display: block !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 576px) {
+  .d-sm-block {
+    display: none !important;
+  }
+
+  .min-vh-100 {
+    min-height: auto !important;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 576px) {
+  .row>* {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .p-3 {
+    padding: 10px
+  }
+
+  .pt-3 {
+    padding-top: 10px !important
+  }
+
+  .d-sm-block {
+    display: block !important;
+  }
+
+  .min-vh-100 {
+    min-height: auto !important;
+  }
+
+  .content-wrapper, .content-wrapper-2 {
+    padding: 10px 20px;
+  }
+
+  .content-wrapper-2 h1 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  .separation {
+    margin: 1.4em 0 0;
+  }
+
+  .follows {
+    padding: 0;
+  }
+
+  .button-bottom {
+    width: 86%;
+    position: absolute;
+    bottom: 93px;
+    left: 7%;
+    right: 7%;
+  }
+
+  .separation-mobile {
+    padding-bottom: 80px;
+  }
+
+  .back-tab {
+    width: 100%;
+    left: 3px;
+    display: flex !important;
+    justify-content: left;
+    margin-top: 8px;
+  }
+
+  .back-tab span {
+    font-size: 24px;
+    margin-left: 20px;
+  }
+}
