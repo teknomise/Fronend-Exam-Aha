@@ -145,7 +145,7 @@ class SearchResult extends React.Component<PropsFromRedux, IPageResultState> {
         ))}
         {users.length > visibleCount && (
           <div className="result-component col-sm-12 col-md-4 col-lg-4">
-            <button className="btn btn-light" onClick={this.handleMoreClick}>
+            <button className="btn btn-light btn-light-position" onClick={this.handleMoreClick}>
               MORE
             </button>
           </div>

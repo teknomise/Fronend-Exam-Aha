@@ -14,6 +14,7 @@ import { SearchActionTypes, SearchState } from '../../stores/Search/types';
 import rootReducer from '../../stores/rootReducers';
 import Slider from '../Slider';
 import { useNavigate } from 'react-router-dom';
+// import CustomSlider from '../Slider/CustomSlider'
 
 /**
  * Maps the state properties to the component's props.
@@ -92,16 +93,17 @@ const TextBox: React.FC<TextboxProps> = ({ keyword, setKeyword, searchState }) =
     <div className='pt-3 pb-2'>
       <input
         id='search'
-        className='form-control form-control-lg bg-transparent pos-bottom-3'
+        className='form-control form-control-lg bg-transparent'
         type='text'
         placeholder='Keyword'
-        aria-label='.form-control-lg example'
+        aria-label='.form-control-lg'
         value={keyword}
         onChange={handleKeywordChange}
       />
       <hr className='separation' />
-      <h2 className='text-white pt-2'># Of Results Per Page</h2>
+      <h2 className='text-white pt-2 text-label-1'># Of Results Per Page</h2>
       <Slider />
+      {/* <CustomSlider /> */}
       <hr className='separation d-none d-md-block d-lg-block' />
       <div className='button-bottom'>
         <hr className='separation separation-mobile d-none d-sm-block' />

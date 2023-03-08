@@ -16,17 +16,17 @@
 
     .title-shown-mobile{
         display: block;
-        margin-top: 38px;
+        margin-top: 40px;
     }
     .results{
         flex-wrap: nowrap;
         flex-direction: column;
         margin-left: 0;
         position: relative;
-        top: 5px;
+        top: 3px;
     }
     .results .result-component{
-        margin-bottom: 10px;
+        margin-bottom: 127px;
     }
     .result-component img{
         height: 222px;
@@ -36,7 +36,10 @@
         height: 222px;
     }
     .content-wrapper h2{
-        margin-bottom:0
+        margin-bottom:0;
+        position: relative;
+        top: 3px;
+        letter-spacing: 0.25px;
     }
     .results .result-component h3{
         margin-top: 20px;

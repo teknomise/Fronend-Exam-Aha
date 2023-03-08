@@ -47,6 +47,8 @@
     font-size: 14px;
     color: #ffffff80;
     margin-bottom: 0;
+    position: relative;
+    top: 2px;
 }
 
 .btn-outline-dark{

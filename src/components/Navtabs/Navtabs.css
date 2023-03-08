@@ -32,9 +32,9 @@
     background-color: #ffffff;
     content: "";
     height: 2px;
-    left: 0;
+    left: 4px;
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     width: 100%;
   }
   
@@ -42,13 +42,9 @@
     color: #ffffff;
   }
   
-  /* .tab-item:hover::before {
-    background-color: #ffffff;
-    content: "";
-    height: 2px;
-    left: 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  } */
-  
+.tab-item span{
+  position: relative;
+  top: 3px;
+  left: 4px;
+  letter-spacing: .25px;
+}

@@ -66,7 +66,7 @@ const Slider: FC<SliderProps> = ({ pageSize, setPageSize }) => {
     <>
       {/* Display current page size */}
       <div className="show-value">
-        <span className="big">{pageSize}</span> <span className="small">results</span>
+        <span className="big">{pageSize}</span> <span className="small ls025">results</span>
       </div>
 
       {/* Range slider */}

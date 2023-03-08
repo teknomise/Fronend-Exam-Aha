@@ -54,9 +54,12 @@ const NavLinkWithIcon = ({to, label, iconActive, iconInactive}: INavLinkProps) =
   const location = useLocation();
   const isActive = location.pathname === to || (location.pathname === '/search' && to === '/');
   const icon = isActive ? iconActive : iconInactive;
-  const linkLabel = !['/search', '/tags'].includes(location.pathname) && isActive ? label : undefined;
+  const linkLabel = !['/searchs', '/tags'].includes(location.pathname) && isActive ? label : undefined;
   const isTags = location.pathname === '/tags';
 
+  // const isMobile = window.innerWidth < 600;
+  // const showLabel = linkLabel && !isMobile
+  
   if (to === '/search') {
     return null; 
   }
@@ -64,8 +67,9 @@ const NavLinkWithIcon = ({to, label, iconActive, iconInactive}: INavLinkProps) =
   return (
     <li className={isTags && label === 'Tags' ? `nav-item add-top` : `nav-item`}>
       <NavLink to={to} className="py-2 px-2 nav-link">
-        <img src={icon} alt={label} />
-        {linkLabel && <span>{linkLabel}</span>}
+        <img src={icon} alt={label} className={!isTags ? `second-icon` : ``}/>
+        {/* {linkLabel && <span>{linkLabel}</span>} */}
+        <span className='show-label'>{linkLabel}</span>
       </NavLink>
     </li>
   );
